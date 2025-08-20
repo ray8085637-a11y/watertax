@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { Upload, Calendar, AlertCircle, CheckCircle, Clock, Plus, X, Trash2, BarChart3, TrendingUp, PieChart, DollarSign, Menu, ChevronLeft, ChevronRight, Zap, PanelLeft, Bell, MapPin, FileText, User, Lock, RefreshCw, Wifi, WifiOff } from 'lucide-react';
 
+// 이런 부분을 찾아서
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfyc2rThJpnExf5W1d_tAaWFB5J-ErmZ1uj1D5Hdk8Jj1UQyAduysoeIQlRaxdoRxe2B/exec';
+const SPREADSHEET_ID = '1Q7ZerGPU2_8WslStabqtdtREDS9FzxgySqyVVr0ut2c';
+
 const ExcelExportUtils = {
   formatBillsForExcel: (bills, stations) => {
     return bills.map(bill => {
@@ -11405,5 +11409,6 @@ const SidebarContent = ({
     </div>
   );
 };
+
 
 export default TaxManagementApp;
